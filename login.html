@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+
+    <!-- design -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", "Segoe UI", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #1a12aa, #671cbd);
+        padding: 20px;
+      }
+
+      main {
+        width: 100%;
+        max-width: 420px;
+        background: #ffffff;
+        padding: 32px 28px;
+        border-radius: 16px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        animation: fadeUp 0.6s ease;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      form::before {
+        content: "Login to Your Account";
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #111827;
+      }
+
+      form br {
+        display: none;
+      }
+
+      input {
+        width: 100%;
+        padding: 13px 15px;
+        border-radius: 10px;
+        border: 1.5px solid #e5e7eb;
+        font-size: 15px;
+        background: #f9fafb;
+        transition: all 0.3s ease;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: #7a7cc6;
+        background: #917070;
+        box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2);
+      }
+
+      input::placeholder {
+        color: #8e97a6;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #3d53a8, #b578db);
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(58, 58, 211, 0.4);
+      }
+
+      button:active {
+        transform: translateY(0);
+        box-shadow: 0 6px 15px rgba(59, 52, 195, 0.3);
+      }
+
+      h4 {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 14px;
+        color: #4a4d52;
+        line-height: 1.8;
+      }
+
+      h4 a {
+        color: #2a21d1;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      h4 a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 480px) {
+        main {
+          padding: 26px 20px;
+          border-radius: 14px;
+        }
+
+        form::before {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <form action="backend file name">
+        Enter your Email ID <input type="email" /> <br />
+        Enter your Password <input type="password" /> <br />
+        <button type="submit">Login</button>
+      </form>
+
+      <h4>
+        Don't have an Account?
+        <a href="signup.html" target="_blank"> Sign Up</a> <br />
+        <a href="forget.html" target="_blank">Forget Password</a>
+      </h4>
+    </main>
+  </body>
+</html>
